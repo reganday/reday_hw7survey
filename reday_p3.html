@@ -5,18 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business Analytics Student Survey</title>
     <link rel="stylesheet" href="stylesheet.css"/>
+    <script src="https://kit.fontawesome.com/576627023d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <h1> Business Analytics Student Survey </h1>
 
+    <label for="race">What racial group best describes you?
+        <select name="race" id="race">
+            <option value="">-- choose option --</option>
+            <option value="1">American Indian or Alaska Native</option>
+            <option value="2">Asian</option>
+            <option value="3">Black or African American</option>
+            <option value="4">Native Hawaiian or Other Pacific Islander</option>
+            <option value="5">White</option>
+        </select>
+    </label>
+    <br/>
+
+    <label for="ethnicity">What ethnic group best describes you?
+        <select name="ethnicity" id="ethnicity">
+            <option value="">-- choose option --</option>
+            <option value="1">Hispanic or Latino</option>
+            <option value="2">Not Hispanic or Latino</option>
+        </select>
+    </label>
+    <br/>
+
+    <p> What gender do you identify as?
+        <span class="tooltip">
+            <i class="fa-solid fa-circle-info fontawesome"></i>
+            <span class="tooltip tooltiptext">Identifying your gender helps us enhance diversity and inclusivity in tech by addressing historical gender imbalances.</span>
+        </span>
+    </p>
+    <select name="gender" id="gender">
+        <option value="">-- choose option --</option>
+        <option value="1">Woman</option>
+        <option value="2">Man</option>
+        <option value="3">Trans woman</option>
+        <option value="4">Trans man</option>
+        <option value="5">Gender queer</option>
+        <option value="6">Gender non-conforming</option>
+        <option value="7">Non-binary</option>
+        <option value="8">Multi-gender</option>
+        <option value="9">Prefer not to respond</option>
+    </select>
 
     <footer>
         <span class="page_number">page 3 of 3</span>
         <button class="next_button" onclick="window.location.href='reday_ty.html';">
             Finish
-          </button>
+        </button>
     </footer>
-
-
 </body>
 </html>

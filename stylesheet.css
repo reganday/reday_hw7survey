@@ -1,7 +1,67 @@
+/* fonts */
+/* Playfair Display SC  for titles */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+/* Quattrocento Sans for paragraph */
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+  background-color: antiquewhite;
+  font-size: 1.1rem;
+  font-family: "Quattrocento Sans", sans-serif;
+}
+
+h1 {
+  font-family: "Playfair Display SC", serif;
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-family: "Playfair Display SC", serif;
+}
+
 .page_number{float:left;}
 
 .next_button{float:right; margin-right:20px;}
 
 footer{
     margin-top: 20px;
+}
+
+.fa-circle-info{
+    font-size:.9rem;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+visibility: hidden;
+width: 200px;
+background-color: #333333;
+color: #f8f8f8;
+font-size: 1.15rem;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+border-radius: 6px;
+padding: 15px;
+
+/* Position the tooltip text */
+position: absolute;
+z-index: 1;
+top: 100%;
+left: 50%;
+margin-left: -100px;
+}
+
+.tooltip:hover .tooltiptext {
+visibility: visible;
+}
+
+
+.required{
+    color: red;
+    font-size: 1rem;
 }
